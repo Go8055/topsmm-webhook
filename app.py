@@ -23,13 +23,12 @@ def order_webhook():
     
     for order in orders:
         message = f"""
-🛒 *Naya Order Aaya!*
+🛒 *New Order Recived!*
 
 🆔 Order ID: `{order.get('id', 'N/A')}`
 📦 Service ID: `{order.get('service_id', 'N/A')}`
 🔢 Quantity: `{order.get('quantity', 'N/A')}`
 🔗 Link: `{order.get('link', 'N/A')}`
-🔑 External ID: `{order.get('external_id', 'N/A')}`
 📅 Date: `{order.get('date', 'N/A')}`
 📊 Status: `{order.get('status', 'N/A')}`
 """
